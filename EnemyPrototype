@@ -1,0 +1,9 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public abstract class EnemyPrototype : MonoBehaviour
+{
+        public abstract EnemyPrototype Clone();
+}
+//Create an abstract class that includes an abstract constructor with the clone function
