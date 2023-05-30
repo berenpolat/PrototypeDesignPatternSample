@@ -1,0 +1,13 @@
+namespace DefaultNamespace
+{
+    public class Goblin: EnemyPrototype
+    {
+        public int health;
+        public float speed;
+        
+        public override EnemyPrototype Clone()
+        {
+            return Instantiate(this);
+        }
+    }
+}
