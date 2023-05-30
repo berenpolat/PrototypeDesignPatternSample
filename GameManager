@@ -1,0 +1,21 @@
+using System;
+using UnityEngine;
+
+namespace DefaultNamespace
+{
+    public class GameManager: MonoBehaviour
+    {
+        public Goblin goblinPrefab;
+
+        private void Start()
+        {
+            Goblin originalGoblin = Instantiate(goblinPrefab);
+            Goblin cloneGoblin = originalGoblin.Clone() as Goblin;
+
+            cloneGoblin.health = 75;
+            cloneGoblin.speed = 5.4f;
+
+            Instantiate(cloneGoblin);
+        }
+    }
+}
